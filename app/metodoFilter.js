@@ -37,3 +37,29 @@ function exibirValorTotalDosLivrosDisponiveisNaTela(valorTotal) {
 // categoria == 'disponivel' ? livros.filter(livro => livro.quantidade > 0) : 
 // caso contrario o trecho aseguir, filtra or categoria nos demais botoes
 // livros.filter(livro => livro.categoria == categoria)
+
+
+// SOBRE CODIGO
+
+// Seleção dos botões:
+// Os botões de filtro são selecionados "usando document.querySelectorAll(".btn")" e armazenados na variável "botoes".
+// Cada botão tem um evento de clique adicionado, chamando a função "filtrarLivros()".
+
+// Função" filtrarLivros()":
+// Essa função é chamada quando um botão de filtro é clicado.
+// Ela obtém o elemento do botão clicado usando "document.getElementById(this.id)".
+// Com base na categoria selecionada (disponível ou outra categoria), a função chama "filtrarPorDisponibilidade() ou filtrarPorCategoria()".
+// O resultado da filtragem é armazenado na variável "livrosFiltrados".
+// A função "exibirOsLivrosNaTela()" é chamada, passando a lista de livros filtrados como argumento.
+// Se a categoria selecionada for "disponível", a função "calcularValorTotalDeLivrosDisponiveis()" é chamada, passando a lista de livros filtrados como argumento.
+// O valor total é então exibido na tela usando a função "exibirValorTotalDosLivrosDisponiveisNaTela()".
+
+// Função "filtrarPorCategoria()":
+// Essa função recebe uma categoria como argumento e retorna uma nova lista de livros filtrados por essa categoria.Função "filtrarPorDisponibilidade()":
+// Essa função retorna uma nova lista de livros filtrados por disponibilidade (quantidade maior que 0).
+
+// Função "exibirValorTotalDosLivrosDisponiveisNaTela()":
+// Essa função recebe o valor total dos livros disponíveis como argumento.
+// Ela atualiza o conteúdo de um elemento HTML com o valor total.
+
+// Esse código parece estar implementando a funcionalidade de filtrar os livros com base na categoria ou disponibilidade, e também calcular e exibir o valor total dos livros disponíveis. Essa implementação está de acordo com o contexto da aula de "JavaScript: métodos de array" da Alura.
